@@ -1,0 +1,221 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+p, h1, h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.author_section{
+    margin: auto;
+    margin-top: 40px;
+    width: 1000px;
+}
+
+.author-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.author-info{
+    padding: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.author-name{
+    display: inline;
+    font-size: 16pt;
+}
+
+.social-media{
+    width: 1rem;
+    height: 1rem;
+    line-height: 16pt;
+    vertical-align: middle;
+}
+
+.blog-header{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+.blog-title{
+    color: white;
+    height: 150px;
+    width: 900px;
+}
+
+
+
+.blog-title > h2{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+
+.content{
+    display: flex;
+    margin: auto;
+    width: 800px;
+}
+
+.content-list{
+    margin: auto;
+    width: 1000px;
+    margin-top: 50px;
+}
+
+
+
+.grid-view-content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    margin: 20px;
+}
+
+#blog-1{
+    background-image: url('../assets/pompicture.jpg');
+}
+
+#blog-2{
+    background-image: url("../assets/bread.jpg");
+}
+
+#blog-3{
+    background-image: url("../assets/wine.jpg");
+}
+
+.post-item:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.post-picture{
+    background-size: cover;
+    height: 200px;
+    width: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+.post-item{
+    position: relative;
+    height: 200px;
+    width: 1000px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 200;
+}
+
+.post-description{
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    color: white;
+}
+
+
+footer{
+    background-color: #D3593F;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px){    
+    .author_section{
+        width: 700px;
+    }
+
+    .author-name{
+        display: block;
+    }
+    .content-list{
+        width: 700px;
+    }
+    .post-picture{
+        width: 700px;
+    }
+    .post-item{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 425px){    
+    .author_section{
+        width: 300px;
+        text-align: center;
+    }
+    .author-name{
+        display: block;
+    }
+    .content-list{
+        width: 375px;
+    }
+    .post-picture{
+        width: 375px;
+    }
+    .post-item{
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+
+    .author_section{
+        width: 300px;
+        text-align: center;
+    }
+    .author-name{
+        display: block;
+    }
+    .content-list{
+        width: 300px;
+    }
+    .post-picture{
+        width: 300px;
+    }
+    .post-item{
+        width: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 320px){
+    .author_section{
+        width: 275px;
+        text-align: center;
+    }
+    .author-name{
+        display: block;
+    }
+    .content-list{
+        width: 250px;
+    }
+    .post-picture{
+        width: 250px;
+    }
+    .post-item{
+        width: 250px;
+    }
+}
